@@ -1,0 +1,19 @@
+:root {
+  /* colors */
+  --main-text: #292d32;
+  --accent-text: #000000;
+  --secondary-text: #9197b3;
+  --hover-color: #ffffff;
+  --active: #008767;
+  --inactive: #df0404;
+
+  /* backgrounds color */
+  --bg-main: #ffffff;
+  --bg-secondary: #fafbff;
+  --bg-hover: #5932ea;
+  --bg-active: #16c09861;
+  --bg-inactive: #ffc5c5;
+
+  /* transition */
+  --transition: all 300ms ease-in-out;
+}
