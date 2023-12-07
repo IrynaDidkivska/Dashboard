@@ -53,5 +53,8 @@ export const StyledLogo = styled(Link)`
       width: 37px;
       height: 37px;
     }
+    span {
+      transform: translateY(6px);
+    }
   }
 `;

@@ -9,11 +9,13 @@ import Customers from './pages/Customers/Customers';
 import Income from './pages/Income/Income';
 import Promote from './pages/Promote/Promote';
 import Help from './pages/Help/Help';
+import CustomersList from './components/CustomersList/CustomersList';
 
 function App() {
   return (
     <>
       <Logo />
+      <CustomersList />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
