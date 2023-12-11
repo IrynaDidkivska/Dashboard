@@ -7,11 +7,16 @@ import {
 } from './Customers.styled';
 import Pagination from '@/components/Pagination/Pagination';
 import { StyledTitle } from '@/components/Layout/Layout.styled';
+import { useMediaQuery } from 'react-responsive';
 
 const Customers = () => {
+  const isSmallScreen = useMediaQuery({
+    query: '(min-width: 320px) and (max-width: 767.98px)',
+  });
   return (
     <>
-      <StyledTitle>Hello Evano 👋🏼,</StyledTitle>
+      {isSmallScreen ? <></> : <StyledTitle>Hello Evano 👋🏼,</StyledTitle>}
+
       <CustomersWrapper>
         <SlylesWrapper>
           <h2>

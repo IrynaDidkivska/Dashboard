@@ -1,14 +1,18 @@
 import { Suspense } from 'react';
-import { LayoutWrapper, StyledSection } from './Layout.styled';
-import Loader from '../Loader/Loader';
 import { Outlet } from 'react-router-dom';
+import { useMediaQuery } from 'react-responsive';
+import Loader from '../Loader/Loader';
 import SideBar from '../SideBar/SideBar';
+import Header from '../Header/Header';
+import { LayoutWrapper, StyledSection } from './Layout.styled';
 
 const Layout = () => {
+  const isSmallScreen = useMediaQuery({
+    query: '(min-width: 320px) and (max-width: 767.98px)',
+  });
   return (
     <>
-      <header />
-
+      {!isSmallScreen ? <header /> : <Header />}
       <LayoutWrapper>
         <SideBar />
         <StyledSection>

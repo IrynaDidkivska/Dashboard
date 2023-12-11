@@ -5,13 +5,14 @@ export const StyledLogo = styled(Link)`
   display: flex;
   align-items: center;
   gap: 2px;
-  margin-bottom: 65px;
+
   color: var(--accent-text);
   cursor: pointer;
   font-family: Poppins-SemiBold, sans-serif;
-  font-size: 18px;
+
+  font-size: 26px;
   font-weight: 600;
-  letter-spacing: 0.18px;
+  letter-spacing: 0.26px;
 
   svg {
     margin-right: 4px;
@@ -31,6 +32,10 @@ export const StyledLogo = styled(Link)`
   }
 
   @media screen and (min-width: 768px) {
+    margin-bottom: 65px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.18px;
     svg {
       width: 28px;
       height: 28px;

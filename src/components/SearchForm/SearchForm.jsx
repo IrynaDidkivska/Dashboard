@@ -1,7 +1,6 @@
+import { toast } from 'react-toastify';
 import { SpriteSVG } from '@/assets/SpriteSVG';
 import { StyledForm } from './SearchForm.styled';
-
-import { toast } from 'react-toastify';
 
 const SearchForm = () => {
   const onSubmit = e => {

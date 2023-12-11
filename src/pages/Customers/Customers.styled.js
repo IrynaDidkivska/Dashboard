@@ -4,14 +4,14 @@ export const CustomersWrapper = styled.div`
   padding: 20px 20px 20px 20px;
   border-radius: 30px;
   background-color: var(--bg-main);
-  width: 568px;
+  width: 375px;
   &::after {
     position: absolute;
     left: 0;
     top: 166px;
     content: '';
     display: block;
-    width: 568px;
+    width: 375px;
     height: 1px;
     border-bottom: 1px solid #eeeeee;
   }
@@ -21,6 +21,12 @@ export const CustomersWrapper = styled.div`
     color: #b5b7c0;
   }
 
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    &::after {
+      width: 568px;
+    }
+  }
   @media screen and (min-width: 1440px) {
     padding: 30px 40px 40px 40px;
     width: 968px;

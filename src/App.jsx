@@ -1,13 +1,15 @@
 import { Route, Routes } from 'react-router-dom';
-import Home from './pages/Home/Home';
-import NotFound from './pages/NotFound/NotFound';
+import {
+  Customers,
+  Home,
+  Dashboard,
+  Product,
+  Income,
+  Promote,
+  Help,
+  NotFound,
+} from './pages';
 import Layout from './components/Layout/Layout';
-import Dashboard from './pages/Dashboard/Dashboard';
-import Product from './pages/Product/Product';
-import Customers from './pages/Customers/Customers';
-import Income from './pages/Income/Income';
-import Promote from './pages/Promote/Promote';
-import Help from './pages/Help/Help';
 
 function App() {
   return (

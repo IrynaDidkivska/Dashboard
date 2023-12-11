@@ -17,6 +17,65 @@ export const Table = styled.table`
     font-size: 14px;
     letter-spacing: -0.14px;
   }
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+      display: block;
+    }
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    tr {
+      border-bottom: 1px solid #eeeeee;
+      text-wrap: nowrap;
+    }
+    td {
+      border: none;
+      position: relative;
+      padding-left: 50%;
+    }
+    td:before {
+      position: absolute;
+      top: 14px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      font-weight: bold;
+    }
+    td:nth-of-type(1):before {
+      content: 'Customer Name';
+      color: #b5b7c0;
+    }
+    td:nth-of-type(2):before {
+      content: 'Company';
+      color: #b5b7c0;
+    }
+    td:nth-of-type(3):before {
+      content: 'Phone Number';
+      color: #b5b7c0;
+    }
+    td:nth-of-type(4):before {
+      content: 'Email';
+      color: #b5b7c0;
+    }
+    td:nth-of-type(5):before {
+      content: 'Country';
+      color: #b5b7c0;
+    }
+    td:nth-of-type(6):before {
+      content: 'Status';
+      color: #b5b7c0;
+      text-align: left;
+    }
+  }
 `;
 
 export const ColumnName = styled.tr`
@@ -48,7 +107,7 @@ export const ColumnText = styled.th`
 export const TableCell = styled.td`
   padding: 14px 0;
   width: 150px;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: none;
   &:last-child {
     position: relative;
     text-align: center;
@@ -56,7 +115,7 @@ export const TableCell = styled.td`
       props.$active === 'Active' ? 'var( --active)' : 'var(--inactive)'};
     &::after {
       position: absolute;
-      left: 25%;
+      right: -44px;
       top: 13px;
       content: '';
       display: block;
@@ -68,6 +127,20 @@ export const TableCell = styled.td`
           props.$active === 'Active' ? 'var( --active)' : 'var(--inactive)'};
       background-color: ${props =>
         props.$active === 'Active' ? 'var(--bg-active)' : 'var(--bg-inactive)'};
+    }
+  }
+  @media screen and (min-width: 768px) {
+    border-bottom: 1px solid #eeeeee;
+
+    &:last-child {
+      text-align: center;
+      padding-left: 8px;
+      &::after {
+        left: 23px;
+        top: 13px;
+        width: 60px;
+        height: 20px;
+      }
     }
   }
   @media screen and (min-width: 1440px) {

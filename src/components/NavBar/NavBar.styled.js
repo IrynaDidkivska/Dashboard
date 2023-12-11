@@ -1,7 +1,4 @@
 import styled from 'styled-components';
-export const StyledWrapper = styled.div`
-  width: 100%;
-`;
 
 export const StyledNavbarMenu = styled.nav`
   ul {
@@ -85,11 +82,29 @@ export const StyledNavbarMenu = styled.nav`
       padding: 13px 0 12px 11px;
     }
   }
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 80vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: var(--bg-secondary);
+    ul {
+      padding: 30px 0;
+      gap: 15px;
+    }
+  }
 `;
 
 export const StyledArrowSVG = styled.div`
   position: absolute;
-  top: 10px;
+  top: 5px;
   right: 8px;
 
   display: flex;
@@ -105,6 +120,9 @@ export const StyledArrowSVG = styled.div`
     &:focus {
       stroke: currentColor;
     }
+  }
+  @media screen and (min-width: 768px) {
+    top: 15px;
   }
 
   @media screen and (min-width: 1440px) {

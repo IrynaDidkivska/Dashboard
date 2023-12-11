@@ -1,11 +1,11 @@
 import { useContext } from 'react';
+import { MyContext } from '@/context/MyContext';
 import {
   ColumnName,
   ColumnText,
   Table,
   TableCell,
 } from './CustomersList.styled';
-import { MyContext } from '@/context/MyContext';
 
 const CustomersList = () => {
   const items = useContext(MyContext);

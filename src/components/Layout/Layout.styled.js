@@ -1,10 +1,8 @@
 import styled from 'styled-components';
 export const LayoutWrapper = styled.main`
-  display: grid;
-  gap: 30px;
-  grid-template-columns: 306px 1127px;
-  grid-template-areas: 'sidebar main';
   @media screen and (min-width: 768px) {
+    display: grid;
+    gap: 30px;
     grid-template-columns: 200px 568px;
     grid-template-areas: 'sidebar main';
   }
@@ -16,11 +14,15 @@ export const LayoutWrapper = styled.main`
 `;
 
 export const StyledSection = styled.section`
-  grid-area: main;
-  width: 568px;
-  margin: 0px;
-  padding-top: 37px;
-  padding-bottom: 158px;
+  width: 320px;
+
+  @media screen and (min-width: 768px) {
+    grid-area: main;
+    width: 568px;
+    margin: 0px;
+    padding-top: 37px;
+    padding-bottom: 158px;
+  }
   @media screen and (min-width: 1440px) {
     padding-top: 41px;
     width: 968px;
@@ -49,14 +51,11 @@ export const StyledAside = styled.aside`
 `;
 
 export const StyledTitle = styled.h1`
-  margin-bottom: 30px;
-  font-size: 20px;
-  line-height: normal;
-  color: var(--accent-text);
-
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 40px;
     font-size: 22px;
+    line-height: normal;
+    color: var(--accent-text);
   }
 
   @media screen and (min-width: 1440px) {
