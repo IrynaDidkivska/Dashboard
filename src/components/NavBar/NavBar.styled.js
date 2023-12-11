@@ -15,7 +15,7 @@ export const StyledNavbarMenu = styled.nav`
     display: flex;
     align-items: center;
     gap: 14px;
-    padding: 11px 0;
+    padding: 5px;
     width: 100%;
     height: auto;
     border-radius: 8px;
@@ -69,18 +69,27 @@ export const StyledNavbarMenu = styled.nav`
   }
 
   @media screen and (min-width: 768px) {
+    ul {
+      gap: 30px;
+    }
     svg {
       width: 24px;
       height: 24px;
     }
   }
   @media screen and (min-width: 1440px) {
+    ul {
+      gap: 18px;
+    }
+    li {
+      padding: 13px 0 12px 11px;
+    }
   }
 `;
 
 export const StyledArrowSVG = styled.div`
   position: absolute;
-  top: 15px;
+  top: 10px;
   right: 8px;
 
   display: flex;
@@ -96,5 +105,9 @@ export const StyledArrowSVG = styled.div`
     &:focus {
       stroke: currentColor;
     }
+  }
+
+  @media screen and (min-width: 1440px) {
+    top: 15px;
   }
 `;

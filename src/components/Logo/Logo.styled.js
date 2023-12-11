@@ -31,11 +31,6 @@ export const StyledLogo = styled(Link)`
   }
 
   @media screen and (min-width: 768px) {
-    gap: 4px;
-    font-size: 22px;
-    font-weight: 600;
-    letter-spacing: 0.22px;
-
     svg {
       width: 28px;
       height: 28px;

@@ -4,7 +4,7 @@ export const StyledForm = styled.form`
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 216px;
+  max-width: 300px;
 
   font-family: Poppins-Regular, sans-serif;
   font-size: 12px;
@@ -53,5 +53,6 @@ export const StyledForm = styled.form`
     }
   }
   @media screen and (min-width: 1440px) {
+    max-width: 216px;
   }
 `;
