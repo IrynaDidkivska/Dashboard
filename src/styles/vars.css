@@ -12,7 +12,7 @@
   --bg-secondary: #fafbff;
   --bg-hover: #5932ea;
   --bg-active: #16c09861;
-  --bg-inactive: #ffc5c5;
+  --bg-inactive: #ffc5c561;
 
   /* transition */
   --transition: all 300ms ease-in-out;

@@ -5,6 +5,7 @@ export const StyledLogo = styled(Link)`
   display: flex;
   align-items: center;
   gap: 2px;
+  margin-bottom: 65px;
   color: var(--accent-text);
   cursor: pointer;
   font-family: Poppins-SemiBold, sans-serif;
@@ -44,7 +45,7 @@ export const StyledLogo = styled(Link)`
       letter-spacing: -0.1px;
     }
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1440px) {
     font-size: 26px;
     font-weight: 600;
     letter-spacing: 0.26px;

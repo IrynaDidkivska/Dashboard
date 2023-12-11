@@ -1,6 +1,13 @@
 import { styled } from 'styled-components';
 
 export const Table = styled.table`
+  border-collapse: collapse;
+
+  overflow: hidden;
+  max-width: 888px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
   font-size: 14px;
   letter-spacing: -0.14px;
   text-align: left;
@@ -8,24 +15,41 @@ export const Table = styled.table`
 `;
 
 export const ColumnName = styled.tr`
-  border: 1px solid green;
+  position: relative;
 `;
 export const ColumnText = styled.th`
+  padding-bottom: 14px;
+  width: 200px;
+  font-size: 14px;
+  letter-spacing: -0.14px;
   background-color: transparent;
   color: #b5b7c0;
-  padding: 10px 0;
-  width: 200px;
 `;
 
 export const TableCell = styled.td`
-  &:not(:last-child) {
-    padding: 24px 0;
-  }
+  padding: 24px 0;
 
+  border-bottom: 1px solid #eeeeee;
   &:last-child {
-    border-radius: 4px;
-    border: 1px solid #00b087;
-    background: rgba(22, 192, 152, 0.38);
-    color: #008767;
+    position: relative;
+    padding: 4px 12px;
+    color: ${props =>
+      props.$active === 'Active' ? 'var( --active)' : 'var(--inactive)'};
+    &::after {
+      position: absolute;
+      left: 0;
+      top: 20px;
+      content: '';
+      display: block;
+      width: 80px;
+      height: 29px;
+      /* padding: 4px 12px; */
+      border-radius: 4px;
+      border: 1px solid
+        ${props =>
+          props.$active === 'Active' ? 'var( --active)' : 'var(--inactive)'};
+      background-color: ${props =>
+        props.$active === 'Active' ? 'var(--bg-active)' : 'var(--bg-inactive)'};
+    }
   }
 `;

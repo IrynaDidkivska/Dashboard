@@ -1,31 +1,22 @@
-import { Container } from '@/styles/Container';
-import { StyledSection } from './Layout.styled';
 import { Suspense } from 'react';
+import { LayoutWrapper, StyledSection } from './Layout.styled';
 import Loader from '../Loader/Loader';
 import { Outlet } from 'react-router-dom';
+import SideBar from '../SideBar/SideBar';
 
 const Layout = () => {
-  // const navigate = useNavigate();
-  // const location = useLocation();
-
-  // useEffect(() => {
-  //   if (location.pathname === '/') {
-  //     navigate('/home');
-  //   }
-  // }, [navigate, location]);
-
   return (
     <>
       <header />
-      <main>
+
+      <LayoutWrapper>
+        <SideBar />
         <StyledSection>
-          <Container>
-            <Suspense fallback={<Loader />}>
-              <Outlet />
-            </Suspense>
-          </Container>
+          <Suspense fallback={<Loader />}>
+            <Outlet />
+          </Suspense>
         </StyledSection>
-      </main>
+      </LayoutWrapper>
       <footer />
     </>
   );

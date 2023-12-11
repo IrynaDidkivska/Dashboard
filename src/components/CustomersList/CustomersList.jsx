@@ -30,7 +30,7 @@ const CustomersList = () => {
             <TableCell>{item.phoneNumber}</TableCell>
             <TableCell>{item.email}</TableCell>
             <TableCell>{item.country}</TableCell>
-            <TableCell>{item.status}</TableCell>
+            <TableCell $active={item.status}>{item.status}</TableCell>
           </tr>
         ))}
       </tbody>

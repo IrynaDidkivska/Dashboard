@@ -3,8 +3,6 @@ import styled from 'styled-components';
 export const StyledForm = styled.form`
   display: flex;
   align-items: center;
-  margin: 0 auto;
-  margin-top: 10px;
   width: 100%;
   max-width: 216px;
 
@@ -49,22 +47,11 @@ export const StyledForm = styled.form`
   }
 
   @media screen and (min-width: 768px) {
-    gap: 4px;
-    font-size: 18px;
-    letter-spacing: 0.18px;
-
     svg {
-      width: 28px;
-      height: 28px;
+      width: 24px;
+      height: 24px;
     }
   }
-  @media screen and (min-width: 1280px) {
-    font-size: 20px;
-    letter-spacing: 0.2px;
-
-    svg {
-      width: 37px;
-      height: 37px;
-    }
+  @media screen and (min-width: 1440px) {
   }
 `;

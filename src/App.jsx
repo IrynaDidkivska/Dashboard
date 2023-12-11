@@ -1,5 +1,4 @@
 import { Route, Routes } from 'react-router-dom';
-import Logo from './components/Logo/Logo';
 import Home from './pages/Home/Home';
 import NotFound from './pages/NotFound/NotFound';
 import Layout from './components/Layout/Layout';
@@ -9,13 +8,10 @@ import Customers from './pages/Customers/Customers';
 import Income from './pages/Income/Income';
 import Promote from './pages/Promote/Promote';
 import Help from './pages/Help/Help';
-import CustomersList from './components/CustomersList/CustomersList';
 
 function App() {
   return (
     <>
-      <Logo />
-      <CustomersList />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />

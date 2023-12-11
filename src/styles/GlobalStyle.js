@@ -11,7 +11,7 @@ body{
   line-height: normal;
   letter-spacing: -0.14px; 
   color: var(--main-text);
-  background-color: var( --bg-main);
+  background-color: var( --bg-secondary);
   
 }
 

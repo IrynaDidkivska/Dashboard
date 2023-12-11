@@ -14,15 +14,6 @@ export const contexValue = [
   },
   {
     id: nanoid(),
-    customerName: 'Jane Cooper',
-    company: 'Microsoft',
-    phoneNumber: '(225) 555-0118',
-    email: 'jane@microsoft.com',
-    country: 'United States',
-    status: 'Active',
-  },
-  {
-    id: nanoid(),
     customerName: 'Floyd Miles',
     company: 'Yahoo',
     phoneNumber: '(205) 555-0100',

@@ -3,7 +3,7 @@ import { StyledLogo } from './Logo.styled';
 
 const Logo = () => {
   return (
-    <StyledLogo>
+    <StyledLogo to={'/'}>
       <SpriteSVG name={'logo'} />
       Dashboard
       <span>v.01</span>

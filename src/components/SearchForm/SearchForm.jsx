@@ -1,11 +1,9 @@
 import { SpriteSVG } from '@/assets/SpriteSVG';
 import { StyledForm } from './SearchForm.styled';
-import { useState } from 'react';
+
 import { toast } from 'react-toastify';
 
 const SearchForm = () => {
-  const [value, setValue] = useState('');
-
   const onSubmit = e => {
     e.preventDefault();
     toast.info(`Your request has been sent`);
@@ -18,8 +16,6 @@ const SearchForm = () => {
         <SpriteSVG name={'search'} />
       </button>
       <input
-        value={value}
-        onChange={e => setValue(e.target.value)}
         name="query"
         type="text"
         autoComplete="off"
