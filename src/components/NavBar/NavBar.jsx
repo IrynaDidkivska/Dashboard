@@ -44,6 +44,6 @@ const NavBar = ({ open, setOpen }) => {
 export default NavBar;
 
 NavBar.propTypes = {
-  open: PropTypes.bool.isRequired,
-  setOpen: PropTypes.func.isRequired,
+  open: PropTypes.bool,
+  setOpen: PropTypes.func,
 };
